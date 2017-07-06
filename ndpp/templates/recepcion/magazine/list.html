@@ -1,0 +1,11 @@
+{% extends "recepcion/base_recepcion.html" %}
+
+{% block title %}login DPP{% endblock title %}
+
+{% block content %}
+  {% include "include/header.html" %}
+  <div class="callout">
+    <a href="{% url 'recepcion_app:add-magazine' %}" class="button">Nuevo Diiario</a>
+    <a href="{% url 'recepcion_app:add-prod' %}" class="button">Nuevo Producto</a>
+  </div>
+{% endblock content %}
